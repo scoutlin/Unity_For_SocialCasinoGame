@@ -64,12 +64,9 @@ namespace Prototype
 
         public void RegistComponent()
         {
-            RegisterProxy(new PrototypeProxy(ProxyDefine.PrototypeProxy));
-
-            RegisterMediator(new PrototypeSceneMediator(entry.prototypeSceneView, MediatorDefine.PrototypeMediator));
-
-            RegisterCommand(CommandDefine.PrototypeSimpleCommnad, typeof(PrototypeSimpleCommnad));
             RegisterCommand(CommandDefine.PrototypeMacroCommnad, typeof(PrototypeMacroCommnad));
+
+            SendNotification(PrototypeFacade.CommandDefine.PrototypeMacroCommnad, this.entry, "Entry");
         }
     }
 }

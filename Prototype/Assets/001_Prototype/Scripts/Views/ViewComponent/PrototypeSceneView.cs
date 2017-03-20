@@ -6,7 +6,11 @@ namespace Prototype
 {
     public class PrototypeSceneView : MonoBehaviour
     {
-        public SpriteRenderer testCircleView;
+        public SpriteRenderer spriteRenderer_001;
+        public SpriteRenderer spriteRenderer_002;
+        public SpriteRenderer spriteRenderer_003;
+        public SpriteRenderer spriteRenderer_004;
+
 
 
         private bool clickFlag = false;
@@ -25,28 +29,32 @@ namespace Prototype
 
         void OnMouseDown()
         {
-            Debug.Log("阿伯!!!");
-
             if(clickFlag == true)
             {
                 clickFlag = false;
-                this.Show();
+                Show();
             }
             else
             {
                 clickFlag = true;
-                this.Hide();
+                Hide();
             }
         }
 
         public void Show()
         {
-            this.testCircleView.enabled = true;
+            spriteRenderer_001.enabled = true;
+            spriteRenderer_002.enabled = true;
+            spriteRenderer_003.enabled = true;
+            spriteRenderer_004.enabled = true;
         }
 
         public void Hide()
         {
-            this.testCircleView.enabled = false;
+            spriteRenderer_001.enabled = false;
+            spriteRenderer_002.enabled = false;
+            spriteRenderer_003.enabled = false;
+            spriteRenderer_004.enabled = false;
         }
     }
 }
