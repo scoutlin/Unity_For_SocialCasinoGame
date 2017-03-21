@@ -11,6 +11,7 @@ namespace Prototype
     {
         #region All Views
         public PrototypeSceneView prototypeSceneView;
+        public DebugView debugView;
         #endregion
 
 

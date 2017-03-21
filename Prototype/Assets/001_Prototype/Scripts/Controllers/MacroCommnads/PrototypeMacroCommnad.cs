@@ -5,9 +5,16 @@ using UnityEngine;
 using PureMVC.Patterns;
 using PureMVC.Interfaces;
 
-
-public class PrototypeMacroCommnad : MacroCommand, ICommand
+namespace Prototype
 {
+    public class PrototypeMacroCommnad : MacroCommand, ICommand
+    {
+        // Initialize MyMacroCommand
+        protected override void InitializeMacroCommand()
+        {
+            //AddSubCommand(typeof(PrototypeSimpleCommnad));
 
-
+            Debug.Log("PrototypeMacroCommnad");
+        }
+    }
 }

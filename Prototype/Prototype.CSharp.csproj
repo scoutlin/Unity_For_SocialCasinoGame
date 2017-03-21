@@ -85,7 +85,9 @@
     <Compile Include="Assets\001_Prototype\Scripts\Models\DataObjects\PrototypeDO.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Models\Proxys\PrototypeProxy.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Models\Proxys\PrototypeTestProxy.cs" />
+    <Compile Include="Assets\001_Prototype\Scripts\Views\Mediators\DebugMediator.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Views\Mediators\PrototypeSceneMediator.cs" />
+    <Compile Include="Assets\001_Prototype\Scripts\Views\ViewComponent\DebugView.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Views\ViewComponent\PrototypeSceneView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

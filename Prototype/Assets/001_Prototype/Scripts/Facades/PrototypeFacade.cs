@@ -9,7 +9,7 @@ namespace Prototype
 {
     public class PrototypeFacade : Facade
     {
-        #region Classes
+        #region Define Classes
         public class ProxyDefine
         {
             public const string PrototypeProxy = "PrototypeProxy";
@@ -29,6 +29,8 @@ namespace Prototype
         public class NotifyDefine
         {
             public const string PrototypeNotify = "PrototypeNotify";
+
+            public const string DebugNotify = "DebugNotify";
         }
         #endregion
 
@@ -64,12 +66,11 @@ namespace Prototype
 
         public void RegistComponent()
         {
-            RegisterProxy(new PrototypeProxy(ProxyDefine.PrototypeProxy));
-
-            RegisterMediator(new PrototypeSceneMediator(entry.prototypeSceneView, MediatorDefine.PrototypeMediator));
-
             RegisterCommand(CommandDefine.PrototypeSimpleCommnad, typeof(PrototypeSimpleCommnad));
-            RegisterCommand(CommandDefine.PrototypeMacroCommnad, typeof(PrototypeMacroCommnad));
+
+            SendNotification(CommandDefine.PrototypeSimpleCommnad, entry, "Entry");
+
+            
         }
     }
 }

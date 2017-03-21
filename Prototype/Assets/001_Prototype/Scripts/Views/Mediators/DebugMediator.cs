@@ -1,24 +1,24 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-using PureMVC.Patterns;
+using PureMVC.Core;
 using PureMVC.Interfaces;
-
-
+using PureMVC.Patterns;
 
 namespace Prototype
 {
-    public class PrototypeSceneMediator : Mediator, IMediator
+    public class DebugMediator : Mediator, IMediator
     {
-        public PrototypeSceneMediator(PrototypeSceneView prototypeView, string name) : base(name, prototypeView)
-		{
+        public DebugMediator(DebugView debugView, string name) : base(name, debugView)
+        {
 
         }
 
         public override IList<string> ListNotificationInterests()
         {
             IList<string> list = new List<string>();
-            list.Add(PrototypeFacade.NotifyDefine.PrototypeNotify);
+            list.Add(PrototypeFacade.NotifyDefine.DebugNotify);
             return list;
         }
 
@@ -26,10 +26,10 @@ namespace Prototype
         {
             switch (note.Name)
             {
-                case PrototypeFacade.NotifyDefine.PrototypeNotify:
+                case PrototypeFacade.NotifyDefine.DebugNotify:
                     {
-                      
-                   
+
+
                     }
                     break;
             }
