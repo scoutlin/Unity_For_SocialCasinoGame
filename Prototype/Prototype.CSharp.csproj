@@ -84,7 +84,6 @@
     <Compile Include="Assets\001_Prototype\Scripts\Facades\PrototypeFacade.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Models\DataObjects\PrototypeDO.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Models\Proxys\PrototypeProxy.cs" />
-    <Compile Include="Assets\001_Prototype\Scripts\Models\Proxys\PrototypeTestProxy.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Views\Mediators\DebugMediator.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Views\Mediators\PrototypeSceneMediator.cs" />
     <Compile Include="Assets\001_Prototype\Scripts\Views\ViewComponent\DebugView.cs" />
