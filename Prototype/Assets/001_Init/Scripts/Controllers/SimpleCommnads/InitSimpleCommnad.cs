@@ -17,7 +17,7 @@ namespace Init
             entry = (Entry)notification.Body;
 
             //Proxy
-            Facade.RegisterProxy(new PrototypeProxy(InitFacade.ProxyDefine.InitProxy));
+            Facade.RegisterProxy(new InitProxy(InitFacade.ProxyDefine.InitProxy));
 
             //Mediator
             Facade.RegisterMediator(new InitSceneMediator(entry.initSceneView, InitFacade.MediatorDefine.InitMediator));

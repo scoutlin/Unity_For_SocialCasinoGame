@@ -81,8 +81,8 @@
     <Compile Include="Assets\001_Init\Scripts\Controllers\SimpleCommnads\InitSimpleCommnad.cs" />
     <Compile Include="Assets\001_Init\Scripts\Entry\Entry.cs" />
     <Compile Include="Assets\001_Init\Scripts\Facades\InitFacade.cs" />
-    <Compile Include="Assets\001_Init\Scripts\Models\DataObjects\PrototypeDO.cs" />
-    <Compile Include="Assets\001_Init\Scripts\Models\Proxys\PrototypeProxy.cs" />
+    <Compile Include="Assets\001_Init\Scripts\Models\DataObjects\InitDO.cs" />
+    <Compile Include="Assets\001_Init\Scripts\Models\Proxys\InitProxy.cs" />
     <Compile Include="Assets\001_Init\Scripts\Views\Mediators\DebugMediator.cs" />
     <Compile Include="Assets\001_Init\Scripts\Views\Mediators\InitSceneMediator.cs" />
     <Compile Include="Assets\001_Init\Scripts\Views\ViewComponent\DebugView.cs" />

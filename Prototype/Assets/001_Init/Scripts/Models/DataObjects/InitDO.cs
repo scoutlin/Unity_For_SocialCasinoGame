@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Init
 {
-    public class PrototypeDO
+    public class InitDO
     {
         public class UserData
         {
@@ -16,7 +16,7 @@ namespace Init
         public UserData userData;
 
 
-        public PrototypeDO()
+        public InitDO()
         {
             userData = new UserData();
         }
