@@ -7278,7 +7278,7 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
     </member>
     <member name="T:UnityEngine.BillboardRenderer">
       <summary>
-        <para>Renders a billboard.</para>
+        <para>Renders a billboard from a BillboardAsset.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.BillboardRenderer.billboard">
@@ -27389,7 +27389,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Mathf.Approximately(System.Single,System.Single)">
       <summary>
-        <para>Compares two floating point values if they are similar.</para>
+        <para>Compares two floating point values and returns true if they are similar.</para>
       </summary>
       <param name="a"></param>
       <param name="b"></param>
@@ -41937,7 +41937,7 @@ Updating a probe's cubemap is a costly operation. Unity needs to render the enti
     </member>
     <member name="P:UnityEngine.Rigidbody.angularVelocity">
       <summary>
-        <para>The angular velocity vector of the rigidbody.</para>
+        <para>The angular velocity vector of the rigidbody measured in radians per second.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Rigidbody.centerOfMass">
