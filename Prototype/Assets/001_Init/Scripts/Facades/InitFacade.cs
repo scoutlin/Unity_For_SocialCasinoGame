@@ -7,7 +7,7 @@ using PureMVC.Interfaces;
 
 namespace Init
 {
-    public class InitFacade : Facade
+    public class InitFacade : Facade, IFacade
     {
         #region Define Classes
         public class ProxyDefine
